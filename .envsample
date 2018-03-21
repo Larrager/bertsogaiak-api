@@ -1,0 +1,11 @@
+SECRET_KEY=''
+DJANGO_SETTINGS_MODULE='bertsogaiak_project.settings.local'
+
+# Database
+# https://docs.djangoproject.com/en/2.0/ref/settings/#databases
+
+DATABASE_NAME='myname'
+DATABASE_USER='myuser'
+DATABASE_PASSWORD='secret'
+HOST='myhost'
+PORT='port number'
