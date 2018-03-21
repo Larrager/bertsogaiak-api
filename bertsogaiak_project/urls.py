@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
+    path('', include('home.urls')),
     path('kudeatu/', admin.site.urls),
     path('api/ofizioak/', include('ofizioak.urls')),
     path('api/bakarkakoak/', include('bakarkakoak.urls')),
