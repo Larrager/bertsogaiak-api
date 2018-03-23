@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>{{ title }}</h1>
-    <ul>
-        <li><a href="{% url 'ofizioak' %}">Ofizioak</a></li>
-        <li><a href="{% url 'bakarkakoak' %}">Bakarkakoak</a></li>
-    </ul>
+    <main class="content">
+        <h1 class="content__title">{{ title }}</h1>
+        <ul class="button__list">
+            <li><a href="{% url 'ofizioak' %}" class="button">Ofizioak</a></li>
+            <li><a href="{% url 'bakarkakoak' %}" class="button">Bakarkakoak</a></li>
+        </ul>
+    </main>
 {% endblock content %}

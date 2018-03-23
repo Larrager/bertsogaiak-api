@@ -1,3 +1,49 @@
+/* 
+//colors
+$primary: #f3283b;
+$secondary: #fc4f18;
+*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
 body {
-    background-color: grey;
+	overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f3283b;
+    display: flex;
+    min-height: 100vh;
+}
+
+a {
+	color: white;
+	text-decoration: underline;
+}
+
+.content {
+    margin: auto;
+}
+
+.content__title {
+    color: white;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.button__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    border: 3px solid white;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    text-decoration: none;
 }
