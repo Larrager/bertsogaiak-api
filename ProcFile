@@ -1,1 +1,1 @@
-web: bertsogaiak_project.wsgi --log-file -
+web: gunicorn bertsogaiak_project.wsgi --log-file -
