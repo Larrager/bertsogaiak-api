@@ -1,16 +1,9 @@
 from .base import *
+import dj_database_url
 
 DEBUG = False
 ALLOWED_HOSTS = ['*']
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('DATABASE_NAME'),
-        'USER': os.environ.get('DATABASE_USER'),
-        'PASSWORD': os.environ.get('DATABASE_PASSWORD'),
-        'PORT': '',
-    }
-}
+DATABASES['default'] = dj_database_url.parse(os.environ.get('DATABASE_URL'))
 
 STATIC_URL = '/static/'
