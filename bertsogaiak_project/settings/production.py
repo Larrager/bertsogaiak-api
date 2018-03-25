@@ -1,7 +1,7 @@
 from .base import *
 
 DEBUG = False
-ALLOWED_HOSTS = ['bertsogaiak.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 DATABASES = {
     'default': {
@@ -13,4 +13,4 @@ DATABASES = {
     }
 }
 
-STATIC_URL = 'https://bertsogaiak.herokuapp.com/static/'
+STATIC_URL = '/static/'
